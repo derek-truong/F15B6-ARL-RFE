@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="51AE90A7-11FF-E484-DE59-912FA4BB5727" name="F15B6_Hist">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:21:29 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hist_id" id="E06B9BDF-4CAC-0158-952D-4DC2226779BB">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:21:36 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="4A11C77B-0405-B8DD-DA5F-8C778DF260FB">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:21:47 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stat_code" id="B5545732-48BE-6F4B-7647-470F2F9C8899">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:22:03 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="by_emp" id="503AC25A-8F6B-B487-C4A4-E6F5B84087D3">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:22:14 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="2241E8CE-3E1A-92E1-2523-91665F90A662">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:38:28 UTC</createdTime>
+<generatorID>57799789-1202-EA7B-4E34-955EC111962B</generatorID>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C3CDC9D3-D5AD-8FBF-2A9A-34632623A268</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="55ECDDD6-718B-B4EF-DA40-132FB8BA7F26">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:41:43 UTC</createdTime>
+<generatorID>37572D2B-EAF8-019A-A5A2-6034BB0EBFF1</generatorID>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>95CDAA91-A2D6-04BA-A476-41A7CC9209AC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5A07CCF-F7DC-6B22-6856-5170F7342954" name="F15B6_Hist PK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:21:46 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E06B9BDF-4CAC-0158-952D-4DC2226779BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

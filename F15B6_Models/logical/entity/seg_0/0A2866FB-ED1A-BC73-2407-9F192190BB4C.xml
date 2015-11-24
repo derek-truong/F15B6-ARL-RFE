@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0A2866FB-ED1A-BC73-2407-9F192190BB4C" name="F15B6_Roles">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-17 01:38:20 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="role_id" id="FB1793F2-174C-37C4-AD35-3E58FB872DA1">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-17 01:38:35 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_type" id="E6A91155-432D-6419-8C95-10001FF2BDB1">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-17 01:38:55 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="36876666-523C-5F4E-9975-9F2545297871">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-17 01:39:16 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="755D267B-8917-4E26-5265-3140F06B6A94">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-17 01:40:12 UTC</createdTime>
+<generatorID>925C8E4B-A446-EEE2-DA2F-EE703D8FE6B9</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>800E085A-CCFC-5800-3B2E-81A2463DC2ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="72E8305A-317B-7E84-FFAB-0177F16FE7AC" name="F15B6_Roles PK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-17 01:38:52 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FB1793F2-174C-37C4-AD35-3E58FB872DA1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

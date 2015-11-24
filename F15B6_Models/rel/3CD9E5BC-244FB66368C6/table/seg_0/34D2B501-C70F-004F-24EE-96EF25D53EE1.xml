@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34D2B501-C70F-004F-24EE-96EF25D53EE1" name="F15B6_RFE">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>F793F5AD-30AE-42DB-0B62-A004C05FA430</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_id" id="28061D2E-05DF-0A7C-87F3-2EB8220F9E19">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>14AA1B49-6D6D-0B0D-E6E5-C9B5F41A1DF5</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B6_Emp_emp_id" id="C1C7B763-42D6-5356-8A01-FE542AC33778">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>70F70BF1-415F-7393-6D7C-1153A7DF3522</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CB6CD94-1AD4-B581-69BF-1F2A3632DF9E" referredColumn="3C196A3D-13F2-29A6-A28B-BA864F4D5C3A"/>
+</associations>
+</Column>
+<Column name="F15B6_Status_status_id" id="AB8E2978-A854-A539-FE02-72B855FA8526">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>2FF2EF34-8F44-C95B-9E47-C2331ED0E6F7</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4535306-4E67-BEE1-8ABE-AB6F5415216E" referredColumn="41441953-D524-DE94-0648-216AF352DF07"/>
+</associations>
+</Column>
+<Column name="F15B6_Task_task_id" id="73F7F224-EEFB-589B-1968-06DA3FA8759E">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>FBFAD4E6-B705-3FE8-0C4F-662053503183</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CBC604F-468A-12D1-2670-00616435CF3D" referredColumn="62D75E9F-AED2-0821-7A0D-99C95A1AE784"/>
+</associations>
+</Column>
+<Column name="explanation" id="8410599A-84C6-4170-32F9-2DEAC15FCB15">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>AF8B73B7-32AD-D14E-3CD7-BDD73D1EA62F</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_protections" id="A579765A-F1FD-4FA3-B27A-50EF7429A354">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>A43B2007-55AA-3740-45CD-B1D7B7480FC3</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="approval_date" id="0E40DC1E-0424-A5A5-2ABD-6D8462BA8D58">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>ABEDD654-420F-DF60-ADE5-565F914B4CB9</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B292A142-400D-863F-309F-E2BE1536D230" name="F15B6_RFE_PK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>0ED22260-04E9-74F8-C3C4-9A3FC1D1477C</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28061D2E-05DF-0A7C-87F3-2EB8220F9E19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51145740-58D0-F54C-144E-228AB8C1B684" name="F15B6_RFE_F15B6_Emp_FK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>5A223269-E666-5AE0-E6B8-1D09EE359C18</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1C7B763-42D6-5356-8A01-FE542AC33778"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7924390F-A90D-5F80-49FE-6E5A78B5918E" name="F15B6_RFE_F15B6_Status_FK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>1BDD7D2C-827D-EDDF-CDDE-22BCE933835C</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB8E2978-A854-A539-FE02-72B855FA8526"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD101A06-A976-8B55-C18C-08915FAF4EA7" name="F15B6_RFE_F15B6_Task_FK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>79098F0D-24C2-857D-ACE2-B7401EEE233C</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73F7F224-EEFB-589B-1968-06DA3FA8759E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

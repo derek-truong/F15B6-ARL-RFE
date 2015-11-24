@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<InheritanceRelation class="oracle.dbtools.crest.model.design.logical.InheritanceRelation" name="Hierarchy_4" directorySegmentName="seg_0" id="3C8969C5-44BE-F965-4032-A4ABB109C62D">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-02 22:09:15 UTC</createdTime>
+<ownerDesignName>CannataDemo11.2</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Super Type</nameOnSource>
+<nameOnTarget>Sub Type</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceEntity>85CA3A64-6677-03D0-2CAD-DFBEB0B47344</sourceEntity>
+<targetEntity>8544421C-75A5-503C-9C91-2FFC5366340E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</InheritanceRelation>

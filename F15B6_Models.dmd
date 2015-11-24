@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="F15B6_Models" id="5E23070B-DB05-2635-5C12-51B62A8DD81F" version="3.5">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-02 22:06:19 UTC</createdTime>
+<ownerDesignName>CannataDemo11.2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5E23070B-DB05-2635-5C12-51B62A8DD81F</designId>
+</OSDM_Design>

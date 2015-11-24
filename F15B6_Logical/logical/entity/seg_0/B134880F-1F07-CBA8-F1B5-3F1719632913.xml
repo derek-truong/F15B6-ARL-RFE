@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B134880F-1F07-CBA8-F1B5-3F1719632913" name="F15B6_Ex_Req">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:19:58 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="er_id" id="4D04FFED-8C94-C2BE-C72B-22E30BE0EB84">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:20:08 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="explanation" id="5F7FAD45-C764-E190-86F1-4BFDE7D01D96">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:20:21 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alt_protection" id="46DA18B8-8548-BA1A-26A8-8F1106918FF0">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:20:46 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="approve_date" id="383B9CED-09F0-26AE-6A24-C1B3AAD117B0">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:21:03 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="90674E66-422E-1777-6FF2-48667740E1F0">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:36:46 UTC</createdTime>
+<generatorID>4505F34D-F568-00BA-8A01-3522BA04A207</generatorID>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C3CDC9D3-D5AD-8FBF-2A9A-34632623A268</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29A20E57-FB86-D17D-DAE3-101BCBC54B79" name="F15B6_Ex_Req PK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 06:20:20 UTC</createdTime>
+<ownerDesignName>F15B6_Logical</ownerDesignName>
+<engineerTo>
+<item key="BEBE6893-3770-DAC2-082C-2DBC4509E8FF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4D04FFED-8C94-C2BE-C72B-22E30BE0EB84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

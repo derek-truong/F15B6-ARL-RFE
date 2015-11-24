@@ -1,0 +1,271 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E9A9271-62A9-5FB2-34C5-6A2AB2C5FB12" name="F15B6_Emp">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>85CA3A64-6677-03D0-2CAD-DFBEB0B47344</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="3C196A3D-13F2-29A6-A28B-BA864F4D5C3A">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>800E085A-CCFC-5800-3B2E-81A2463DC2ED</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B6_Auth_auth_id" id="A930D581-15D1-DEC9-B53A-A0EE87A69CD7">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>6BA59986-0366-6C6D-1DB7-3A54E4156179</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAADD480-5BA4-3977-9EDF-08A5AF5E0612" referredColumn="F72B7D75-53EC-2051-DDE7-B2A03BC96A98"/>
+</associations>
+</Column>
+<Column name="F15B6_Lab_lab_id" id="A5F19765-D842-A811-199D-7DFC72EA0FF7">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>FEC22BBF-3470-296E-ED14-1B7424341547</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF11D9DF-6576-59CF-47C9-3B415CECC4E4" referredColumn="04A5A03D-6F1B-5D22-E7E5-D8B913A23A2C"/>
+</associations>
+</Column>
+<Column name="ename" id="466D4CD5-4A97-0281-0A02-AD96703142D3">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>3C86BFAD-2A7D-8172-7B10-CA83C9198247</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_lab" id="E1BC16B6-BC42-7D86-803A-3FC81C7A50E5">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>701B5BBD-AB61-9023-7835-01B68F6F6EF6</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_email" id="9C903B86-1195-99C0-90AE-C5648F103518">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>D7068343-BAF1-450E-C5CF-B24C68EE3642</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_office" id="BC2F3E9D-1FC4-77C4-2970-8524DF19DF03">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>FDDD6D9D-D78A-9C0E-05B8-D6CCD141F82D</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_phone" id="374B7D4D-9DC2-CDB6-6215-B618E9FEDA5A">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>1D2DE3B7-01F9-1F06-8191-2669E376D01D</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_status" id="96ACD1F9-AF72-18A5-7932-BA69DE55278A">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>DFF434B6-9A30-A973-E951-89FB1AA5E1C3</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="7105B14D-581C-FC5E-5280-C27847F56F7E">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>1C11B0CA-1923-1B8D-C533-9C84A327C738</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="admin_flag" id="5FA371DA-3A61-321F-956C-E96F986507E9">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>6624DB4C-2EF6-199D-2240-C793CDEDF285</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab_dir_flag" id="C9608954-E78C-835E-6390-14A1F2184644">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>4EAFB37D-726F-2DF2-2E2B-0B7105E07CC3</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chair_flag" id="744C4B12-DADE-D866-9074-3F8263BBC3D3">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>913D4A95-605D-028F-ABC0-30CC52663F35</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exec_flag" id="54B62F58-A3D4-2C21-8EB9-F091F478F590">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>9FCB5811-9DEB-E2AB-19BC-CA175AB6D304</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B6_Roles_role_id" id="1939F463-D94E-10AC-A0AD-88D9CB52B6C9">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>A7D826DE-3670-3C80-9FE4-8E797EFD55D2</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB38A4A0-1981-0678-047B-E2B99162D63C" referredColumn="2A96906D-BE76-5F1A-C6AC-9C12542C28AF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22F1F9C5-87F4-9ED9-E809-A5C73FDFE48D" name="F15B6_Emp_PK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>5846DC60-B101-8F47-7329-603B42B4BD3E</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C196A3D-13F2-29A6-A28B-BA864F4D5C3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="591EE347-6A0C-2F7A-2835-2D7549FAC225" name="F15B6_Emp__IDX">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>24CE034D-A917-4EEE-521E-FF28B319CDF8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A930D581-15D1-DEC9-B53A-A0EE87A69CD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16249826-0457-3B98-0DDF-E97141627579" name="F15B6_Emp__IDXv1">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>925C8E4B-A446-EEE2-DA2F-EE703D8FE6B9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1939F463-D94E-10AC-A0AD-88D9CB52B6C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE00E9F9-80E6-9512-C0F7-5B8189270B23" name="F15B6_Emp_F15B6_Auth_FK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>24CE034D-A917-4EEE-521E-FF28B319CDF8</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A930D581-15D1-DEC9-B53A-A0EE87A69CD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A46A026-B08E-9D0B-D9DC-13A6AE88AC15" name="F15B6_Emp_F15B6_Lab_FK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>9DC95458-541C-D29D-D686-EED9C25E3A5A</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5F19765-D842-A811-199D-7DFC72EA0FF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB7474D7-09C9-871D-C6E9-433D0223E5D0" name="F15B6_Emp_F15B6_Roles_FK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:23:00 UTC</createdTime>
+<generatorID>925C8E4B-A446-EEE2-DA2F-EE703D8FE6B9</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1939F463-D94E-10AC-A0AD-88D9CB52B6C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

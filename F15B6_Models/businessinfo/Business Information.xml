@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="1BA4320A-FDE3-D77B-24E6-C38F2C0F6C82">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-02 22:06:20 UTC</createdTime>
+<ownerDesignName>CannataDemo11.2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

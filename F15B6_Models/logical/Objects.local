@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="8544421C-75A5-503C-9C91-2FFC5366340E" name="F15B6_Admin" seqName="seg_0"/>
+   <object objectType="Entity" objectID="AEE22C59-CCFE-1C97-727B-5CFC5570495E" name="F15B6_Auth" seqName="seg_0"/>
+   <object objectType="Entity" objectID="1E885DB7-D5E8-8F72-8826-36D31ABE3C47" name="F15B6_Chair" seqName="seg_0"/>
+   <object objectType="Entity" objectID="36DDA81E-3A91-825C-1CDD-492465DA4E90" name="F15B6_Com" seqName="seg_0"/>
+   <object objectType="Entity" objectID="979D8523-10F2-BE06-607F-7D7BB7E64787" name="F15B6_Doc" seqName="seg_0"/>
+   <object objectType="Entity" objectID="85CA3A64-6677-03D0-2CAD-DFBEB0B47344" name="F15B6_Emp" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9CC5E106-CBBF-12DA-BCD4-3684547B84C8" name="F15B6_Ex_Dir" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6CA34A00-8E5A-6E62-C05E-A626CAE38A32" name="F15B6_Ex_Req" seqName="seg_0"/>
+   <object objectType="Entity" objectID="0B8E1B4A-0C0B-BC02-F22B-2C54E9FAA69E" name="F15B6_Hist" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E5C0A267-712D-78F9-81AD-FAA51D4A9B67" name="F15B6_Lab" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D68FA9F1-5BDA-D106-96D2-496B3F8DA98C" name="F15B6_Lab_Dir" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F793F5AD-30AE-42DB-0B62-A004C05FA430" name="F15B6_RFE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="0A2866FB-ED1A-BC73-2407-9F192190BB4C" name="F15B6_Roles" seqName="seg_0"/>
+   <object objectType="Entity" objectID="EEFF585E-847E-CA27-144A-60EA686F6FF3" name="F15B6_Status" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3064D8BC-5383-AEDB-7DB3-E9628A5A9C1C" name="F15B6_Task" seqName="seg_0"/>
+   <object objectType="Relation" objectID="24CE034D-A917-4EEE-521E-FF28B319CDF8" name="R1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8CF10350-245F-63DC-329A-F2E71E3FEE35" name="R10" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9FAD97C6-A9C8-810E-BCCB-1BFA7F979EAE" name="R11" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1088E201-7830-13ED-6BEC-7FD9D558D8A1" name="R14" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9DC95458-541C-D29D-D686-EED9C25E3A5A" name="R2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5A223269-E666-5AE0-E6B8-1D09EE359C18" name="R3" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E0CF35A7-54BE-1FA7-ED55-D64191ED2E11" name="R5" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1BDD7D2C-827D-EDDF-CDDE-22BCE933835C" name="R6" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9632FEEA-1FDB-FD37-A904-27AA1DF103D3" name="R7" seqName="seg_0"/>
+   <object objectType="Relation" objectID="79098F0D-24C2-857D-ACE2-B7401EEE233C" name="R8" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AD3525B6-6FCB-8247-74EC-D3094F51E691" name="R8v1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E8E36582-C8B2-AA81-351F-DCAA5D6C7E63" name="R9" seqName="seg_0"/>
+   <object objectType="Relation" objectID="925C8E4B-A446-EEE2-DA2F-EE703D8FE6B9" name="Relation_17" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F7C56ED8-D22B-83E3-6C30-9ACF0E13187C" name="Relation_19" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B9C3D7CE-97DC-C59A-6FC3-A5B2F4E4C52F" name="Relation_4" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="7A7E5317-5515-10C7-D806-C98D2B4818A2" name="Hierarchy_1" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="E82CB442-CDF0-0F3F-B013-8836333D51E2" name="Hierarchy_2" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="7A2360B9-EDA5-1372-B42A-B99C9FA8188B" name="Hierarchy_3" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="3C8969C5-44BE-F965-4032-A4ABB109C62D" name="Hierarchy_4" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

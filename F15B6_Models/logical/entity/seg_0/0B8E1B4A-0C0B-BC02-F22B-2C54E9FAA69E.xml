@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0B8E1B4A-0C0B-BC02-F22B-2C54E9FAA69E" name="F15B6_Hist">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-02 22:31:51 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hist_id" id="170BDDCC-F0B6-E0FD-A3E0-01B57D316ECE">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-02 22:31:56 UTC</createdTime>
+<comment>&lt;br/&gt;</comment>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="A27E67E4-6D68-2635-95BD-F9D5AAEC26CD">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-06 21:05:27 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stat_code" id="71FFB154-9C2B-E64B-4D92-6FE43F494A7E">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-10 01:38:53 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="by_emp" id="8CA9F348-E055-1807-3371-A5EE4094A555">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-10 01:39:28 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="9B4ABDFA-1B10-D0FC-124F-AFC5B5F359E5">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-02 22:32:44 UTC</createdTime>
+<generatorID>9632FEEA-1FDB-FD37-A904-27AA1DF103D3</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>14AA1B49-6D6D-0B0D-E6E5-C9B5F41A1DF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="D3282BAE-F493-B38F-4854-B314C017D448">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-24 03:21:29 UTC</createdTime>
+<generatorID>F7C56ED8-D22B-83E3-6C30-9ACF0E13187C</generatorID>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7730E04E-D829-A665-D978-2CE6F2EB71C6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A0B8949B-324E-9551-F209-6A3D5DFFE83C" name="F15B6_History PK">
+<createdBy>Derek Truong</createdBy>
+<createdTime>2015-11-02 22:32:03 UTC</createdTime>
+<ownerDesignName>F15B6_Models</ownerDesignName>
+<engineerTo>
+<item key="3CD9E5BC-DF1C-83DF-F887-244FB66368C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>170BDDCC-F0B6-E0FD-A3E0-01B57D316ECE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
