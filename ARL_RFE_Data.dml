@@ -1,0 +1,46 @@
+truncate table F15B6_AUTH;
+truncate table F15B6_STATUS;
+truncate table F15B6_ROLES;
+truncate table F15B6_LAB;
+truncate table F15B6_EMP;
+truncate table F15B6_TASK;
+
+
+INSERT INTO TABLE F15B6_AUTH (auth_id, right) VALUES(100, 'Read-Only');
+INSERT INTO TABLE F15B6_AUTH (auth_id, right) VALUES(120, 'Read/Write');
+
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat, description) VALUES (1, 'Entered', 'The RFE has been created but has not yet been submitted for approval.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat, description) VALUES (2, 'Submitted', 'The RFE has been submitted to the Lab System Administrator for approval.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat, description) VALUES (3, 'Returned', 'The RFE has been returned for further information or clarification. Once Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat, description) VALUES (4, 'Recalled', 'The requestor has recalled an RFE that has not yet reached final approval. Once Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat,description) VALUES (5, 'Rejected', 'The RFE has been rejected and cannot be implemented.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat,description) VALUES (6, 'SA Approved', 'The Lab System Administrator has approved the RFE; it has been submitted for Lab Director approval.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat,description) VALUES (7, 'LD Approval', 'The Lab Director has approved the RFE; it has been submitted for Network Security Panel approval.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat,description) VALUES (8, 'CH Approval', 'The Chairperson has approved the RFE; it has been submitted to the Executive Director''s Office for approval.');
+INSERT INTO TABLE F15B6_STATUS (status_id, rfe_stat,description) VALUES (9, 'Final Approved', 'The Executive Director has given final approval for the RFE and it may be implemented.');
+
+INSERT INTO TABLE F15B6_ROLES (role_id, role_type, description) VALUES (1, 'Requestor', 'The employee who created the RFE');
+INSERT INTO TABLE F15B6_ROLES (role_id, role_type, description) VALUES (2, 'Lab Director Approver', 'Second round approver for new RFEs in their lab');
+INSERT INTO TABLE F15B6_ROLES (role_id, role_type, description) VALUES (3, 'Chairperson Approver', 'Network Security Panel approver');
+INSERT INTO TABLE F15B6_ROLES (role_id, role_type, description) VALUES (4, 'FYI Reviewer', 'An employee with peripheral interests; will get automatically notified at certain stages');
+INSERT INTO TABLE F15B6_ROLES (role_id, role_type, description) VALUES (5, 'Sys Admin Approver', 'First round approver for new RFEs in their lab');
+INSERT INTO TABLE F15B6_ROLES (role_id, role_type, description) VALUES (6, 'Exec Dir Approver', 'Final round approver for all RFEs');
+
+INSERT INTO TABLE F15B6_LAB (lab_id, lab_name) VALUES (0, 'ZERO');
+INSERT INTO TABLE F15B6_LAB (lab_id, lab_name) VALUES (100, 'Lab1');
+INSERT INTO TABLE F15B6_LAB (lab_id, lab_name) VALUES (120, 'Lab2');
+
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (100, 'Charlotte', 100, 'charlotte@wilbur.web', 'ORCL', '1800ORCL', 'A',SYSDATE, 'N', 'N', 'N', 'N');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (101, 'SysAdmin1', 100, 'admin@whathavewedone.com', 'Oracle HQ', '1800CALL', 'A', SYSDATE, 'Y', 'N', 'N', 'N');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (102, 'LabDir1', 100, 'imadirector.us', 'SUN', '1800NAH', 'A', SYSDATE, 'N', 'Y', 'N', 'N');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (103, 'Derek', 100, 'derektruong@apex.orcl', 'ORCL HQ', '1800APEX', 'A', SYSDATE, 'N', 'N', 'N', 'N');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (120, 'ExecDir', 0, 'exec@me.ca', 'O r a c l e', 'hithere', 'A', SYSDATE, 'N', 'N', 'N', 'Y');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (121, 'Chairperson', 0, 'hi@me', 'Oracle HQ', 'goaway', 'A', SYSDATE, 'N', 'N', 'Y', 'N');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (140, 'Alvin', 100, 'alvin@orcl.jpg', 'not-ORCL HQ', '1800956', 'A', SYSDATE, 'N', 'N', 'N', 'N');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (160, 'ReadWriter', 120, 'iedityourstuff@gmail.com', 'Editor Inc.', 'EditThat', 'A', SYSDATE, 'N', 'N', 'N', 'N');
+INSERT INTO TABLE F15B6_EMP (emp_id, ename, emp_lab, emp_email, emp_office, emp_phone, emp_status, status_eff_date, admin_flag, lab_dir_flag, chair_flag, exec_flag) VALUES (161, 'Reader', 120, 'ireadalot@hotmail.com', 'Readers Inc.', '1800READ', 'A', SYSDATE, 'N', 'N', 'N', 'N');
+
+
+INSERT INTO TABLE F15B6_TASK (task_id, eff_date, task_abb, task_desc) VALUES (100, SYSDATE, 'Flight Test', 'Testing flight trajectory.');
+INSERT INTO TABLE F15B6_TASK (task_id, eff_date, task_abb, task_desc) VALUES (101, SYSDATE, 'What is this.', 'Idk.');
+INSERT INTO TABLE F15B6_TASK (task_id, eff_date, task_abb, task_desc) VALUES (120, SYSDATE, 'So many things', 'So little time');
