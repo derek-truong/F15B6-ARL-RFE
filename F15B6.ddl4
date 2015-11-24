@@ -1,0 +1,261 @@
+drop view F15B6_RFE_view;
+drop view F15B6_Emp_view;
+drop view F15B6_Ex_Dir_view;
+drop view F15B6_Chair_view;
+drop view F15B6_Lab_Dir_view;
+drop view F15B6_Admin_view;
+
+create view F15B6_Emp_view as
+SELECT
+	emp_id,
+	ename,
+	emp_lab,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	status_eff_date,
+	admin_flag,
+	lab_dir_flag,
+	exec_flag,
+	chair_flag
+FROM F15B6_Emp;
+
+create or replace TRIGGER F15B6_Emp_trigger
+		INSTEAD OF insert ON F15B6_Emp_view
+		FOR EACH ROW
+BEGIN
+	insert into F15B6_Emp(
+		emp_id,
+		ename,
+		emp_lab,
+		emp_email,
+		emp_office,
+		emp_phone,
+		emp_status,
+		status_eff_date,
+		admin_flag,
+		lab_dir_flag,
+		exec_flag,
+		chair_flag)
+		VALUES(
+		:NEW.emp_id,
+		:NEW.ename,
+		:NEW.emp_lab,
+		:NEW.emp_email,
+		:NEW.emp_office,
+		:NEW.emp_phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		:NEW.admin_flag,
+		:NEW.lab_dir_flag,
+		:NEW.exec_flag,
+		:NEW.chair_flag);
+END;
+/
+
+create view F15B6_Ex_Dir_view as
+SELECT
+	emp_id,
+	ename,
+	emp_lab,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	status_eff_date,
+	admin_flag,
+	lab_dir_flag,
+	exec_flag,
+	chair_flag
+FROM F15B6_Emp where exec_flag = 1;
+
+create or replace TRIGGER F15B6_Ex_Dir_trigger
+		INSTEAD OF insert ON F15B6_Ex_Dir_view
+		FOR EACH ROW
+
+BEGIN
+	insert into F15B6_Emp(
+		emp_id,
+		ename,
+		emp_lab,
+		emp_email,
+		emp_office,
+		emp_phone,
+		emp_status,
+		status_eff_date,
+		admin_flag,
+		lab_dir_flag,
+		exec_flag,
+		chair_flag)
+		VALUES(
+		:NEW.emp_id,
+		:NEW.ename,
+		:NEW.emp_lab,
+		:NEW.emp_email,
+		:NEW.emp_office,
+		:NEW.emp_phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		:NEW.admin_flag,
+		:NEW.lab_dir_flag,
+		:NEW.exec_flag,
+		:NEW.chair_flag);
+END;
+/
+
+
+create view F15B6_Chair_view as
+SELECT
+	emp_id,
+	ename,
+	emp_lab,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	status_eff_date,
+	admin_flag,
+	lab_dir_flag,
+	exec_flag,
+	chair_flag
+
+FROM F15B6_Emp where chair_flag = 1;
+
+create or replace TRIGGER F15B6_Chair_trigger
+		INSTEAD OF insert ON F15B6_Chair_view
+		FOR EACH ROW
+BEGIN
+	insert into F15B6_Emp(
+		emp_id,
+		ename,
+		emp_lab,
+		emp_email,
+		emp_office,
+		emp_phone,
+		emp_status,
+		status_eff_date,
+		admin_flag,
+		lab_dir_flag,
+		exec_flag,
+		chair_flag)
+		VALUES(
+		:NEW.emp_id,
+		:NEW.ename,
+		:NEW.emp_lab,
+		:NEW.emp_email,
+		:NEW.emp_office,
+		:NEW.emp_phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		:NEW.admin_flag,
+		:NEW.lab_dir_flag,
+		:NEW.exec_flag,
+		:NEW.chair_flag);
+END;
+/
+
+
+
+create view F15B6_Lab_Dir_view as
+SELECT
+	emp_id,
+	ename,
+	emp_lab,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	status_eff_date,
+	admin_flag,
+	lab_dir_flag,
+	exec_flag,
+	chair_flag
+
+FROM F15B6_Emp where lab_dir_flag = 1;
+
+create or replace TRIGGER F15B6_Lab_Dir_trigger
+		INSTEAD OF insert ON F15B6_Lab_Dir_view
+		FOR EACH ROW
+BEGIN
+	insert into F15B6_Emp(
+		emp_id,
+		ename,
+		emp_lab,
+		emp_email,
+		emp_office,
+		emp_phone,
+		emp_status,
+		status_eff_date,
+		admin_flag,
+		lab_dir_flag,
+		exec_flag,
+		chair_flag)
+		VALUES(
+		:NEW.emp_id,
+		:NEW.ename,
+		:NEW.emp_lab,
+		:NEW.emp_email,
+		:NEW.emp_office,
+		:NEW.emp_phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		:NEW.admin_flag,
+		:NEW.lab_dir_flag,
+		:NEW.exec_flag,
+		:NEW.chair_flag);
+END;
+/
+
+
+create view F15B6_Admin_view as
+SELECT
+	emp_id,
+	ename,
+	emp_lab,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	status_eff_date,
+	admin_flag,
+	lab_dir_flag,
+	exec_flag,
+	chair_flag
+
+FROM F15B6_Emp where admin_flag = 1;
+
+create or replace TRIGGER F15B6_Admin_trigger
+		INSTEAD OF insert ON F15B6_Admin_view
+		FOR EACH ROW
+BEGIN
+	insert into F15B6_Emp(
+		emp_id,
+		ename,
+		emp_lab,
+		emp_email,
+		emp_office,
+		emp_phone,
+		emp_status,
+		status_eff_date,
+		admin_flag,
+		lab_dir_flag,
+		exec_flag,
+		chair_flag)
+		VALUES(
+		:NEW.emp_id,
+		:NEW.ename,
+		:NEW.emp_lab,
+		:NEW.emp_email,
+		:NEW.emp_office,
+		:NEW.emp_phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		:NEW.admin_flag,
+		:NEW.lab_dir_flag,
+		:NEW.exec_flag,
+		:NEW.chair_flag);
+END;
+/
+
+
